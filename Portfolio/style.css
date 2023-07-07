@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Makasar&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(35, 35, 35);
+    overflow-x: hidden;
+    font-family: 'Noto Serif Makasar', serif;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(28, 37, 40);
+}
+
+.navbar .navleft {
+    padding: 10px 50px;
+    font-size: 1.5rem;
+    font-family: "Audiowide", sans-serif;
+    color: aqua;
+}
+
+.navbar .navright {
+    list-style: none;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navright li a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navright li a:hover {
+    color: aqua;
+}
+
+/* home */
+section {
+    width: 90vw;
+    background-color: rgb(32, 40, 42);
+    margin: auto;
+    margin-top: 10px;
+    min-height: 90vh;
+    border-radius: 20px;
+}
+
+.home {
+    display: flex;
+}
+
+.home .left {
+    width: calc(90vw / 2 - 100px);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    /* align-items: center; */
+    justify-content: center;
+    /* color: white; */
+}
+
+.left h3,
+p {
+    color: gray;
+    font-size: x-large;
+    padding: 0px 20px;
+}
+
+.left h1 {
+    color: aqua;
+    font-family: Audiowide;
+    font-size: 3rem;
+    padding: 10px;
+}
+
+.home .right {
+    width: calc(90vw / 2 - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    /* width: 100%; */
+    height: 70vh;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px 0px aqua;
+}
+
+/* About */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: aqua;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.about p {
+    margin: auto;
+    width: 90%;
+    color: white;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 50px;
+}
+
+.about .skills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.about .skills .skill {
+    list-style: none;
+    flex-basis: calc(33% - 60px);
+    overflow: hidden;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: aqua;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+}
+
+/* Projects */
+
+.projectsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects {
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects .project {
+    min-height: 250px;
+    flex-basis: calc(50% - 60px);
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(0, 12, 12);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project h3 {
+    color: aqua;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 30px;
+}
+
+.project p {
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: justify;
+}
+
+.project a {
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    align-self: center;
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.project a:hover {
+    background-color: rgb(0, 170, 255);
+}
+
+.project a:active {
+    background-color: rgb(0, 98, 255);
+}
+
+/* Contact */
+.contact {
+    margin-top: 20px;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.left p {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.left span {
+    color: white;
+    padding: 10px;
+}
+
+.contact .right {
+    width: 45%;
+    margin: auto;
+}
+
+.right h3 {
+    color: aqua;
+    text-align: center;
+    margin: 20px;
+    font-size: 1.3rem;
+}
+
+.right hr {
+    background-color: aqua;
+    border: none;
+    height: 2px;
+    opacity: 30%;
+}
+
+.right .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3em;
+}
+
+.social a {
+    font-size: 3rem;
+    color: aqua;
+    padding: 10px;
+    text-align: center;
+}
+
+.social a:hover {
+    transform: scale(1.2);
+    color: rgb(0, 204, 255);
+}
+
+/* footer */
+
+footer {
+    width: 100vw;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+}
